@@ -5,6 +5,8 @@ signal clicked
 
 @export var sprite : Sprite2D
 @export var brokenTexture : Texture2D
+@export var soundEffect : AudioStream
+@export var soundPlayer : AudioStreamPlayer2D
 
 func _ready() -> void:
 	if get_child_count() > 0 and get_child(0) is CollisionShape2D:
@@ -15,6 +17,7 @@ func _ready() -> void:
 		push_error("sprite is not set in the Inspector.")
 	if brokenTexture == null:
 		push_error("broken texture is not set in the Inspector.")
+	soundPlayer.stream = soundEffect
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,4 +34,5 @@ func _on_collision_shape_input_event(viewport, event, shape_idx):
 			clicked.emit()
 			isBroken = true
 			sprite.texture = brokenTexture
+			soundPlayer.play()
 			print("Area2D clicked!") # For debugging.

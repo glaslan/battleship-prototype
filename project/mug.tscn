@@ -1,16 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://hyx2qfvdc0pk"]
+[gd_scene load_steps=6 format=3 uid="uid://hyx2qfvdc0pk"]
 
 [ext_resource type="Script" path="res://mug.gd" id="1_6dkj1"]
 [ext_resource type="Texture2D" uid="uid://bkfoocxpf3drg" path="res://coffee-mug-top-transparent-png.png" id="1_gie1v"]
 [ext_resource type="Texture2D" uid="uid://o4mhjklwwq5m" path="res://broken.png" id="2_fykyo"]
+[ext_resource type="AudioStream" uid="uid://bpt1d1l4xv0nc" path="res://explosion.wav" id="3_d4dkl"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gc8fu"]
 size = Vector2(45, 46)
 
-[node name="Mug" type="Area2D" node_paths=PackedStringArray("sprite")]
+[node name="Mug" type="Area2D" node_paths=PackedStringArray("sprite", "soundPlayer")]
 script = ExtResource("1_6dkj1")
 sprite = NodePath("Sprite")
 brokenTexture = ExtResource("2_fykyo")
+soundEffect = ExtResource("3_d4dkl")
+soundPlayer = NodePath("AudioStreamPlayer2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_gc8fu")
@@ -19,3 +22,7 @@ shape = SubResource("RectangleShape2D_gc8fu")
 position = Vector2(3.13, 5)
 scale = Vector2(0.053, 0.053)
 texture = ExtResource("1_gie1v")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(3.13, 5)
+scale = Vector2(0.053, 0.053)
