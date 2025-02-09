@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://csk0qms2tfi36"]
+
+[ext_resource type="Texture2D" uid="uid://bl4nuyifmph0b" path="res://board.png" id="1_brld3"]
+[ext_resource type="PackedScene" uid="uid://hyx2qfvdc0pk" path="res://mug.tscn" id="2_gfxne"]
+
+[node name="Main" type="Node"]
+
+[node name="BoardMe" type="Sprite2D" parent="."]
+position = Vector2(279, 320)
+scale = Vector2(0.33875, 0.33875)
+texture = ExtResource("1_brld3")
+
+[node name="BoardOp" type="Sprite2D" parent="."]
+position = Vector2(831, 315)
+scale = Vector2(0.33875, 0.33875)
+texture = ExtResource("1_brld3")
+
+[node name="Mugs" type="Node" parent="."]
+
+[node name="Mug" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(394, 437)
+
+[node name="Mug2" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(347, 437)
+
+[node name="Mug3" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(300, 437)
+
+[node name="Mug4" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(209, 342)
+
+[node name="Mug5" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(209, 295)
+
+[node name="Mug6" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(209, 248)
+
+[node name="Mug7" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(395, 248)
+
+[node name="Mug8" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(396, 295)
+
+[node name="Mug9" parent="Mugs" instance=ExtResource("2_gfxne")]
+position = Vector2(253, 437)
