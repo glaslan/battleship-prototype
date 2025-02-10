@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://csk0qms2tfi36"]
+[gd_scene load_steps=4 format=3 uid="uid://csk0qms2tfi36"]
 
 [ext_resource type="Texture2D" uid="uid://bl4nuyifmph0b" path="res://board.png" id="1_brld3"]
 [ext_resource type="PackedScene" uid="uid://hyx2qfvdc0pk" path="res://mug.tscn" id="2_gfxne"]
+[ext_resource type="PackedScene" uid="uid://dmdxl56mobfkq" path="res://board_op.tscn" id="2_hohnt"]
 
 [node name="Main" type="Node"]
 
@@ -10,10 +11,8 @@ position = Vector2(279, 320)
 scale = Vector2(0.33875, 0.33875)
 texture = ExtResource("1_brld3")
 
-[node name="BoardOp" type="Sprite2D" parent="."]
-position = Vector2(831, 315)
-scale = Vector2(0.33875, 0.33875)
-texture = ExtResource("1_brld3")
+[node name="BoardOp" parent="." instance=ExtResource("2_hohnt")]
+position = Vector2(802, 319)
 
 [node name="Mugs" type="Node" parent="."]
 

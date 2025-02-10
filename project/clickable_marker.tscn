@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://dor7iup2d2636"]
+
+[ext_resource type="Script" path="res://clickable_marker.gd" id="1_m0dk3"]
+[ext_resource type="AudioStream" uid="uid://cvgvq2xq17px8" path="res://click.wav" id="2_uvvy4"]
+[ext_resource type="AudioStream" uid="uid://c288bjkp6qi4u" path="res://click2.wav" id="3_x20vl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oj04a"]
+size = Vector2(137.841, 137.841)
+
+[node name="ClickableMarker" type="Area2D" node_paths=PackedStringArray("X", "O", "soundPlayer")]
+script = ExtResource("1_m0dk3")
+X = NodePath("X")
+O = NodePath("O")
+click1Audio = ExtResource("2_uvvy4")
+click2Audio = ExtResource("3_x20vl")
+soundPlayer = NodePath("AudioStreamPlayer2D")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_oj04a")
+
+[node name="X" type="Line2D" parent="."]
+points = PackedVector2Array(-61, -63, 61, 61, 1, 0, -60, 58, 61, -59)
+default_color = Color(0, 0, 0, 1)
+
+[node name="O" type="Line2D" parent="."]
+points = PackedVector2Array(-38, -58, 23, -60, 53, -22, 48, 29, -2, 53, -47, 34, -56, -2)
+closed = true
+default_color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]

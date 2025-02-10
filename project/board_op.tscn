@@ -1,0 +1,200 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmdxl56mobfkq"]
+
+[ext_resource type="Texture2D" uid="uid://bl4nuyifmph0b" path="res://board.png" id="1_m24we"]
+[ext_resource type="PackedScene" uid="uid://dor7iup2d2636" path="res://clickable_marker.tscn" id="2_0cria"]
+
+[node name="BoardOp" type="Sprite2D"]
+scale = Vector2(0.33875, 0.33875)
+texture = ExtResource("1_m24we")
+
+[node name="ClickeableMarker" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, -484.133)
+
+[node name="ClickeableMarker2" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, -484.133)
+
+[node name="ClickeableMarker3" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, -484.133)
+
+[node name="ClickeableMarker4" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, -487.085)
+
+[node name="ClickeableMarker5" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, -487.085)
+
+[node name="ClickeableMarker6" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, -487.085)
+
+[node name="ClickeableMarker7" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, -487.085)
+
+[node name="ClickeableMarker8" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, -490.037)
+
+[node name="ClickeableMarker9" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, -345.387)
+
+[node name="ClickeableMarker10" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, -345.387)
+
+[node name="ClickeableMarker11" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, -345.387)
+
+[node name="ClickeableMarker12" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, -348.339)
+
+[node name="ClickeableMarker13" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, -348.339)
+
+[node name="ClickeableMarker14" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, -348.339)
+
+[node name="ClickeableMarker15" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, -348.339)
+
+[node name="ClickeableMarker16" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, -351.292)
+
+[node name="ClickeableMarker17" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, -206.642)
+
+[node name="ClickeableMarker18" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, -206.642)
+
+[node name="ClickeableMarker19" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, -206.642)
+
+[node name="ClickeableMarker20" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, -209.594)
+
+[node name="ClickeableMarker21" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, -209.594)
+
+[node name="ClickeableMarker22" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, -209.594)
+
+[node name="ClickeableMarker23" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, -209.594)
+
+[node name="ClickeableMarker24" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, -212.546)
+
+[node name="ClickeableMarker25" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, -70.8484)
+
+[node name="ClickeableMarker26" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, -70.8483)
+
+[node name="ClickeableMarker27" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, -70.8484)
+
+[node name="ClickeableMarker28" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, -73.8006)
+
+[node name="ClickeableMarker29" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, -73.8006)
+
+[node name="ClickeableMarker30" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, -73.8006)
+
+[node name="ClickeableMarker31" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, -73.8006)
+
+[node name="ClickeableMarker32" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, -76.7528)
+
+[node name="ClickeableMarker33" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, 70.849)
+
+[node name="ClickeableMarker34" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, 70.8492)
+
+[node name="ClickeableMarker35" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, 70.849)
+
+[node name="ClickeableMarker36" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, 67.8969)
+
+[node name="ClickeableMarker37" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, 67.8969)
+
+[node name="ClickeableMarker38" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, 67.8968)
+
+[node name="ClickeableMarker39" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, 67.8968)
+
+[node name="ClickeableMarker40" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, 64.9447)
+
+[node name="ClickeableMarker41" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, 209.594)
+
+[node name="ClickeableMarker42" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, 209.595)
+
+[node name="ClickeableMarker43" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, 209.594)
+
+[node name="ClickeableMarker44" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, 206.642)
+
+[node name="ClickeableMarker45" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, 206.642)
+
+[node name="ClickeableMarker46" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, 206.642)
+
+[node name="ClickeableMarker47" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, 206.642)
+
+[node name="ClickeableMarker48" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, 203.69)
+
+[node name="ClickeableMarker49" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-487.085, 348.34)
+
+[node name="ClickeableMarker50" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-348.339, 348.34)
+
+[node name="ClickeableMarker51" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-206.642, 348.34)
+
+[node name="ClickeableMarker52" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-67.8967, 345.388)
+
+[node name="ClickeableMarker53" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(67.8967, 345.388)
+
+[node name="ClickeableMarker54" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(209.594, 345.388)
+
+[node name="ClickeableMarker55" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(348.34, 345.388)
+
+[node name="ClickeableMarker56" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(487.085, 342.435)
+
+[node name="ClickeableMarker57" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-484.133, 490.037)
+
+[node name="ClickeableMarker58" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-345.387, 490.037)
+
+[node name="ClickeableMarker59" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-203.69, 490.037)
+
+[node name="ClickeableMarker60" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(-64.9446, 487.085)
+
+[node name="ClickeableMarker61" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(70.8487, 487.085)
+
+[node name="ClickeableMarker62" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(212.546, 487.085)
+
+[node name="ClickeableMarker63" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(351.292, 487.085)
+
+[node name="ClickeableMarker64" parent="." instance=ExtResource("2_0cria")]
+position = Vector2(490.037, 484.133)
